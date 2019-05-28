@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="img">
-            <img src="../.././assets/organization.jpg" alt=""/>
+            <img src="../.././assets/organization1.jpg" alt=""/>
             <p>流程与信息化管理中心组织架构图</p>
         </div>
         <el-card v-for="(item,index) in contents" :key="index"  class="content"> 
