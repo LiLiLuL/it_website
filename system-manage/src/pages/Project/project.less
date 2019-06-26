@@ -1,0 +1,115 @@
+@import '~antd/lib/style/themes/default.less';
+.createBotton{
+    float: right;
+    :after{
+        content: '';
+        clear: both;
+    }
+}
+.projectInformation,.operation,.avatarSetting{
+    text-align: right;
+    font-weight: bold;
+}
+.pagination{
+    float: right;
+    :after{
+        content: '';
+        display: block;
+        clear:both;
+    }
+}
+.theCard:hover,
+.theCard:focus,
+.theCard:active{
+    color: #116705;
+    background: #79d8e81a;
+
+}
+.operation button{
+    margin-right:20px;
+}
+.milePostOperation{
+    float:right;
+    animation:operation 5s;
+    -moz-animation:operation 5s; 
+    -webkit-animation:operation 5s;
+    -o-animation:operation 5s; 
+
+   
+}
+.milePostOperation button{
+    height:100%;
+    background-color:rgba(255, 0, 0, 0.648);
+    color:#fff;
+    border:none;
+    &:hover,
+    &:focus,
+    &:active{
+        background-color:#f07b0efb;
+    }
+}
+.milePostOperation button:first-child{
+    background-color:rgba(0, 128, 0, 0.648);
+    margin-right:4px;
+}
+.myList{
+    :global{
+        .ant-list-item{
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #ccc;
+            &:last-child{
+                border: none;
+            }
+            &:hover,
+            &:focus,
+            &:active{
+                background-color:#c4f3a975;
+            }
+        }
+    }
+}
+
+@keyframes operation{
+    0%   {right:-200px; top:0px}
+    100% {left:200px; top:0px}
+}
+.addBtn{
+    width:100%;
+    height:40px;
+    background-color:#116705;
+    color:#fff;
+}
+.formOperation button{
+    margin:10px;
+}
+
+.theList{
+    :global{
+        .ant-list-item{
+            float: left;
+            margin:5px;
+        }
+
+    }
+    :after{
+        content: '';
+        display: block;
+        clear:both;
+    }
+
+}
+
+.classfy{
+    clear: both;
+    font-size:20px;
+    font-weight: bold;
+    border-left: 5px solid #054853;
+    color:green;
+    padding-left:5px;
+}
+.checkedTag{
+    background: #116705;
+}

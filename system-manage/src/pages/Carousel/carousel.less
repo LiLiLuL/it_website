@@ -1,0 +1,55 @@
+@import '~antd/lib/style/themes/default.less';
+
+.myCarousel{
+   
+    padding: 4px;
+    :global{
+       .ant-row{
+           display: flex;
+           flex-wrap: wrap;
+       }
+        .slick-dots li button{
+            background: #001529;
+        }
+        .slick-dots li.slick-active button{
+            background:#006666;
+        }
+        
+    
+    }
+
+}
+.listStyle{
+   
+}
+.carouselCard{
+    :global{
+        .ant-card-meta-title a{
+           color:#0a034b;
+        }
+        .ant-card-meta-description{
+        
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .ant-btn{
+            border:none;
+        }
+        .ant-btn:hover, .ant-btn:focus{
+            border:none;
+            border-color:transparent;
+        }
+
+    }
+}
+//取消button点击后光晕的效果
+button[ant-click-animating-without-extra-node]:after {
+    border: 0 none;
+    opacity: 0;
+    animation:none 0 ease 0 1 normal;
+  }
+
+
+
+
