@@ -1,0 +1,47 @@
+@import '~antd/lib/style/themes/default.less';
+.myList{
+    :global{
+        .ant-list-item{
+            display: flex;
+            margin:5px;
+            background: #fff;
+            &:hover,
+            &:focus{
+                background:#124e562f;
+            }
+        }
+        .ant-list-item-extra{
+            padding: 5px;
+        }
+    }
+   
+}
+.theList{
+    display: flex;
+    justify-content: space-around;
+    .clickButton{
+        top: 0px;
+        width: 200px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        button{
+            font-weight: bold;
+            font-weight: bold;
+            background: red;
+            color: #fff;
+            &:first-child{
+                background: orange;
+            }
+        }
+
+    }
+    .theListItem{
+        flex-grow: 1
+    }
+}
+
+.hidden{
+    display: none;
+}

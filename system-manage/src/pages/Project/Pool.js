@@ -92,6 +92,12 @@ export default class CommentManage extends Component{
     onSearch=()=>{
         console.log(this.state);
     }
+    createProject=()=>{
+        const { dispatch } = this.props;
+        dispatch(routerRedux.push({
+            pathname: '/project/create'
+        }))
+    }
     render(){
         const { myproject: { projects } } = this.props;
         const total = projects.length;
@@ -100,6 +106,8 @@ export default class CommentManage extends Component{
       
         return (
             <div>
+                <Button type="primary" className={styles.createBotton} onClick={this.createProject}>创建项目</Button>
+                <p style={{ clear: 'both' }}></p>
                按条件搜索项目池
                <p>
                  <span>选择部门：</span>

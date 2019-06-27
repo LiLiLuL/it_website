@@ -60,5 +60,9 @@ export default {
   'menu.project':'Project Manage',
   'menu.project.summary':'Summary',
   'menu.project.pool':'Project Pool',
-  'menu.talent':'Talent Manage'
+  'menu.talent':'Talent Manage',
+  'menu.talent.talentall':'Talent Team & People',
+  'menu.talent.editTalent':'New Talent Report',
+  'menu.report':'Report Manage',
+  'menu.report.system':'System Report'
 };

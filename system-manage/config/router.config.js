@@ -153,7 +153,18 @@ export default [
         path: '/talent',
         name: 'talent',
         icon: 'star',
-        component: './TalentManagement/Talent'
+        routes:[
+          {
+            path: '/talent/all',
+            name: 'talentall',
+            component: './TalentManagement/Talent',
+          },
+          {
+            path:'/talent/edit',
+            name:'editTalent',
+            component:'./TalentManagement/TalentEdit',
+          }
+        ]
       },
       //system-manage
       {
@@ -162,6 +173,19 @@ export default [
             path: '/system/comment',
             name: 'comment',
             component: './SystemPages/CommentManage'
+          }
+        ]
+      },
+      //report manage
+      {
+        name:'report',
+        icon:'dashboard',
+        path:'/report',
+        routes:[
+          {
+            path:'/report/system',
+            name:'system',
+            component:'./Report/SystemReport'
           }
         ]
       },
@@ -196,6 +220,7 @@ export default [
           },
         ]
       },
+
 
       // // dashboard
       // { path: '/', redirect: '/dashboard/analysis' },

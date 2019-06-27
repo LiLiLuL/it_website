@@ -60,5 +60,9 @@ export default {
   'menu.project':'项目管理',
   'menu.project.summary':'项目纪要',
   'menu.project.pool':'项目池',
-  'menu.talent':'人才管理'
+  'menu.talent':'人才管理',
+  'menu.talent.talentall':'优秀团队&个人',
+  'menu.talent.editTalent':'新建优秀报告',
+  'menu.report':'报表管理',
+  'menu.report.system':'系统报表'
 };

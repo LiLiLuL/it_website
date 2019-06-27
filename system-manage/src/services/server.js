@@ -1,5 +1,7 @@
 import { stringify } from 'qs';
 import request from '@/utils/request';
+import { async } from 'q';
+import { func } from 'prop-types';
 export async function queryArticles(){
     return request('/server/article/all');
   }
@@ -44,4 +46,8 @@ export async function queryProjects(){
 
 export async function queryProjectDetail(params){
   return request(`/server/project/detail?${stringify(params)}`);
+}
+
+export async function queryTalents(){
+  return request('/server/talent/all');
 }
