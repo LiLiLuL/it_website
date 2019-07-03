@@ -64,5 +64,7 @@ export default {
   'menu.talent.talentall':'Talent Team & People',
   'menu.talent.editTalent':'New Talent Report',
   'menu.report':'Report Manage',
-  'menu.report.system':'System Report'
+  'menu.report.system':'System Report',
+  'menu.report.analysisArticle':'Article  Analysis',
+  'menu.report.analysisProject':'Project  Analysis',
 };

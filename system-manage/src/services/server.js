@@ -51,3 +51,7 @@ export async function queryProjectDetail(params){
 export async function queryTalents(){
   return request('/server/talent/all');
 }
+
+export async function queryArticleNumbers(){
+  return request('/server/article/number');
+}

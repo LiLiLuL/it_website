@@ -1,0 +1,96 @@
+@import '~antd/lib/style/themes/default.less';
+@import '~@/utils/utils.less';
+
+
+.articleExtra {
+  display: inline-block;
+  margin-right: 24px;
+  a {
+    margin-left: 24px;
+    color: @text-color;
+    &:hover {
+      color: @primary-color;
+    }
+    &.currentDate {
+      color: @primary-color;
+    }
+  }
+}
+
+.articleCard {
+  .articleBar {
+    padding: 0 0 32px 32px;
+  }
+  .articleRank {
+    padding: 0 32px 32px 72px;
+  }
+  :global {
+    .ant-tabs-bar {
+      padding-left: 16px;
+      .ant-tabs-nav .ant-tabs-tab {
+        padding-top: 16px;
+        padding-bottom: 14px;
+        line-height: 24px;
+      }
+    }
+    .ant-tabs-extra-content {
+      padding-right: 24px;
+      line-height: 55px;
+    }
+    .ant-card-head {
+      position: relative;
+    }
+    .ant-card-head-title {
+      align-items: normal;
+    }
+  }
+}
+
+.articleCardExtra {
+  height: inherit;
+}
+
+.articleTypeRadio {
+  position: absolute;
+  right: 54px;
+  bottom: 12px;
+}
+
+
+@media screen and (max-width: @screen-lg) {
+  .articleExtra {
+    display: none;
+  }
+
+  .rankingList {
+    li {
+      span:first-child {
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .rankingTitle {
+    margin-top: 16px;
+  }
+
+  .articleCard .articleBar {
+    padding: 16px;
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .articleExtraWrap {
+    display: none;
+  }
+
+  .articleCard {
+    :global {
+      .ant-tabs-content {
+        padding-top: 30px;
+      }
+    }
+  }
+}

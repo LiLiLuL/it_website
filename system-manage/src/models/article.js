@@ -1,4 +1,4 @@
-import { queryArticles,queryDrafts } from '@/services/server';
+import { queryArticles,queryDrafts,queryArticleNumbers } from '@/services/server';
 
 export default {
   namespace: 'article',
@@ -7,6 +7,7 @@ export default {
    articles:[],
    drafts:[],
    isLoading:false,
+   articleNumbers:[]
   },
 
   effects: {
@@ -32,6 +33,21 @@ export default {
         type:'setDrafts',
         payload:Array.isArray(response) ? response : [],
       })
+    }, 
+    *fetchArticleNumbers(_,{call,put}){
+      yield put({
+        type: 'changeLoading',
+        payload: true,
+      });
+      const response=yield call(queryArticleNumbers);
+      yield put({
+        type:'setArticleNumbers',
+        payload:Array.isArray(response)?response:[],
+      })
+      yield put({
+        type: 'changeLoading',
+        payload: false,
+      });
     }
    
   },
@@ -55,5 +71,11 @@ export default {
         isLoading: action.payload,
       };
     },
+    setArticleNumbers(state,action){
+      return{
+        ...state,
+        articleNumbers:action.payload
+      }
+    }
   },
 };

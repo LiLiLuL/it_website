@@ -183,6 +183,16 @@ export default [
         path:'/report',
         routes:[
           {
+            path:'/report/article',
+            name:'analysisArticle',
+            component:'./Report/ArticleAnalysis'
+          },
+          {
+            path:'/report/project',
+            name:'analysisProject',
+            component:'./Report/ProjectAnalysis'
+          },
+          {
             path:'/report/system',
             name:'system',
             component:'./Report/SystemReport'
@@ -224,28 +234,28 @@ export default [
 
       // // dashboard
       // { path: '/', redirect: '/dashboard/analysis' },
-      // {
-      //   path: '/dashboard',
-      //   name: 'dashboard',
-      //   icon: 'dashboard',
-      //   routes: [
-      //     {
-      //       path: '/dashboard/analysis',
-      //       name: 'analysis',
-      //       component: './Dashboard/Analysis',
-      //     },
-      //     {
-      //       path: '/dashboard/monitor',
-      //       name: 'monitor',
-      //       component: './Dashboard/Monitor',
-      //     },
-      //     {
-      //       path: '/dashboard/workplace',
-      //       name: 'workplace',
-      //       component: './Dashboard/Workplace',
-      //     },
-      //   ],
-      // },
+      {
+        path: '/dashboard',
+        name: 'dashboard',
+        icon: 'dashboard',
+        routes: [
+          {
+            path: '/dashboard/analysis',
+            name: 'analysis',
+            component: './Dashboard/Analysis',
+          },
+          {
+            path: '/dashboard/monitor',
+            name: 'monitor',
+            component: './Dashboard/Monitor',
+          },
+          {
+            path: '/dashboard/workplace',
+            name: 'workplace',
+            component: './Dashboard/Workplace',
+          },
+        ],
+      },
       // // forms
       // {
       //   path: '/form',

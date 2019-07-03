@@ -64,5 +64,8 @@ export default {
   'menu.talent.talentall':'优秀团队&个人',
   'menu.talent.editTalent':'新建优秀报告',
   'menu.report':'报表管理',
-  'menu.report.system':'系统报表'
+  'menu.report.system':'系统监控页',
+  'menu.report.analysisArticle':'文章分析页',
+  'menu.report.analysisProject':'项目分析页',
+  
 };

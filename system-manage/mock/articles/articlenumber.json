@@ -1,0 +1,28 @@
+[
+    {
+        "id": 1,
+        "organization": "架构与流程管理部",
+        "num": 12
+    },
+    {
+        "id": 2,
+        "organization": "业务解决方案部",
+        "num": 15
+    },
+    {
+        "id": 3,
+        "organization": "数据与技术平台部",
+        "num": 22
+    },
+    {
+        "id": 4,
+        "organization": "基础架构运维部",
+        "num": 30
+    },
+    {
+        "id": 5,
+        "organization": "信息安全部",
+        "num": 21
+    }
+  
+]

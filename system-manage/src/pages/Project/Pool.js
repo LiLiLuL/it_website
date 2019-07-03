@@ -8,7 +8,7 @@ import {List,Button,Pagination,Card,Steps,Avatar,Tooltip} from 'antd';
 const { Meta } = Card;
 const { Step } = Steps;
 const colorList = ['#f56a00', '#7265e6', '#ffbf00', '#00a2ae', '#686869'];
-const status=[{id:11,name:'未完成'},{id:12,name:'已完成'}]
+const status=[{id:11,name:'未完成'},{id:12,name:'已完成'},{id:13,name:'进行中'}]
 @connect(({ myproject, department,loading }) => ({
     myproject,
     department,
