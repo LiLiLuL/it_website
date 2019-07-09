@@ -1,13 +1,19 @@
-import { queryArticles,queryDrafts,queryArticleNumbers } from '@/services/server';
+import { queryArticles, queryDrafts, queryArticleNumbers, queryDepartmentArticle, queryArticleData } from '@/services/server';
 
 export default {
   namespace: 'article',
 
   state: {
-   articles:[],
-   drafts:[],
-   isLoading:false,
-   articleNumbers:[]
+    articles: [],
+    drafts: [],
+    isLoading: false,
+    articleNumbers: [],
+    departmentNumbers: [],
+    jiagouData: [],
+    solutionData: [],
+    safeData: [],
+    basisData: [],
+    dataData: [],
   },
 
   effects: {
@@ -19,37 +25,51 @@ export default {
       const response = yield call(queryArticles);
       yield put({
         type: 'setArticles',
-        payload:Array.isArray(response) ? response : [],
+        payload: Array.isArray(response) ? response : [],
       });
       yield put({
         type: 'changeLoading',
         payload: false,
       });
     },
-    *fetchDrafts(_,{call,put}){
-      const response=yield call(queryDrafts);
+    *fetchDrafts(_, { call, put }) {
+      const response = yield call(queryDrafts);
       console.log(response);
       yield put({
-        type:'setDrafts',
-        payload:Array.isArray(response) ? response : [],
+        type: 'setDrafts',
+        payload: Array.isArray(response) ? response : [],
       })
-    }, 
-    *fetchArticleNumbers(_,{call,put}){
+    },
+    *fetchArticleNumbers(_, { call, put }) {
       yield put({
         type: 'changeLoading',
         payload: true,
       });
-      const response=yield call(queryArticleNumbers);
+      const response = yield call(queryArticleNumbers);
       yield put({
-        type:'setArticleNumbers',
-        payload:Array.isArray(response)?response:[],
+        type: 'setArticleNumbers',
+        payload: Array.isArray(response) ? response : [],
       })
       yield put({
         type: 'changeLoading',
         payload: false,
       });
-    }
-   
+    },
+    *fetchDepartmentNumbers({ payload }, { call, put }) {
+      const response = yield call(queryDepartmentArticle, payload);
+      yield put({
+        type: 'setDepartmentNumber',
+        payload: response
+      })
+    },
+    *fetch(_, { call, put }) {
+      const response = yield call(queryArticleData);
+      yield put({
+        type: 'save',
+        payload: response,
+      });
+    },
+
   },
 
   reducers: {
@@ -59,10 +79,10 @@ export default {
         articles: action.payload,
       };
     },
-    setDrafts(state,action){
-      return{
+    setDrafts(state, action) {
+      return {
         ...state,
-        drafts:action.payload
+        drafts: action.payload
       }
     },
     changeLoading(state, action) {
@@ -71,11 +91,32 @@ export default {
         isLoading: action.payload,
       };
     },
-    setArticleNumbers(state,action){
-      return{
+    setArticleNumbers(state, action) {
+      return {
         ...state,
-        articleNumbers:action.payload
+        articleNumbers: action.payload
       }
-    }
+    },
+    setDepartmentNumber(state, action) {
+      return {
+        ...state,
+        departmentNumbers: action.payload
+      }
+    },
+    clear() {
+      return {
+        jiagouData: [],
+        solutionData: [],
+        safeData: [],
+        basisData: [],
+        dataData: [],
+      }
+    },
+    save(state, { payload }) {
+      return {
+        ...state,
+        ...payload,
+      };
+    },
   },
 };

@@ -45,6 +45,7 @@ export async function queryProjects(){
 }
 
 export async function queryProjectDetail(params){
+  console.log(stringify(params));
   return request(`/server/project/detail?${stringify(params)}`);
 }
 
@@ -54,4 +55,13 @@ export async function queryTalents(){
 
 export async function queryArticleNumbers(){
   return request('/server/article/number');
+}
+
+
+export async function queryDepartmentArticle(params){
+  return request(`/server/article/department/number?${stringify(params)}`);
+}
+
+export async function queryArticleData(){
+  return request('/server/article/department/all')
 }

@@ -1,0 +1,525 @@
+[
+   {
+      "name": "架构与流程管理部",
+      "data": [
+         {
+            "id": 7,
+            "organization": "流程管理组",
+            "num": 15,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "李三",
+                  "article": 7
+               },
+               {
+                  "id": 2,
+                  "username": "李三1",
+                  "article": 8
+               }
+            ]
+         },
+         {
+            "id": 8,
+            "organization": "流程开发支持组",
+            "num": 30,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "张三",
+                  "article": 9
+               },
+               {
+                  "id": 2,
+                  "username": "张三1",
+                  "article": 5
+               },
+               {
+                  "id": 3,
+                  "username": "张三2",
+                  "article": 9
+               },
+               {
+                  "id": 4,
+                  "username": "张三3",
+                  "article": 2
+               },
+               {
+                  "id": 5,
+                  "username": "张三4",
+                  "article": 5
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "name": "业务解决方案部",
+      "data": [
+         {
+            "id": 9,
+            "organization": "财务组",
+            "num": 15,
+            "articleNum": [
+               {
+                  "id": 3,
+                  "username": "谢三2",
+                  "article": 9
+               },
+               {
+                  "id": 4,
+                  "username": "谢三3",
+                  "article": 2
+               },
+               {
+                  "id": 5,
+                  "username": "谢三4",
+                  "article": 4
+               }
+            ]
+         },
+         {
+            "id": 10,
+            "organization": "制造计划组",
+            "num": 20,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "李三",
+                  "article": 9
+               },
+               {
+                  "id": 4,
+                  "username": "李三3",
+                  "article": 6
+               },
+               {
+                  "id": 5,
+                  "username": "李三4",
+                  "article": 5
+               }
+            ]
+         },
+         {
+            "id": 11,
+            "organization": "研发组",
+            "num": 30,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "张三",
+                  "article": 9
+               },
+               {
+                  "id": 2,
+                  "username": "张三1",
+                  "article": 5
+               },
+               {
+                  "id": 3,
+                  "username": "张三2",
+                  "article": 9
+               },
+               {
+                  "id": 4,
+                  "username": "张三3",
+                  "article": 2
+               },
+               {
+                  "id": 5,
+                  "username": "张三4",
+                  "article": 5
+               }
+            ]
+         },
+         {
+            "id": 12,
+            "organization": "营销组",
+            "num": 35,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "l三",
+                  "article": 18
+               },
+               {
+                  "id": 2,
+                  "username": "L三1",
+                  "article": 5
+               },
+               {
+                  "id": 3,
+                  "username": "L三2",
+                  "article": 5
+               },
+               {
+                  "id": 4,
+                  "username": "L三3",
+                  "article": 2
+               },
+               {
+                  "id": 5,
+                  "username": "L三4",
+                  "article": 5
+               }
+            ]
+         },
+         {
+            "id": 13,
+            "organization": "XX组",
+            "num": 3,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "陈三",
+                  "article": 3
+               },
+               {
+                  "id": 2,
+                  "username": "陈三1",
+                  "article": 0
+               }
+            ]
+         },
+         {
+            "id": 14,
+            "organization": "前端组",
+            "num": 7,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "刘三",
+                  "article": 3
+               },
+               {
+                  "id": 2,
+                  "username": "刘三1",
+                  "article": 4
+               }
+            ]
+         },
+         {
+            "id": 15,
+            "organization": "后端组",
+            "num": 12,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "高三",
+                  "article": 3
+               },
+               {
+                  "id": 2,
+                  "username": "高三1",
+                  "article": 0
+               },
+               {
+                  "id": 3,
+                  "username": "高三4",
+                  "article": 4
+               },
+               {
+                  "id": 22,
+                  "username": "高三5",
+                  "article": 3
+               },
+               {
+                  "id": 12,
+                  "username": "高三6",
+                  "article": 2
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "name": "数据与技术平台部",
+      "data": [
+         {
+            "id": 16,
+            "organization": "开发组",
+            "num": 25,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "张三",
+                  "article": 5
+               },
+               {
+                  "id": 2,
+                  "username": "张三1",
+                  "article": 2
+               },
+               {
+                  "id": 3,
+                  "username": "张三2",
+                  "article": 1
+               },
+               {
+                  "id": 4,
+                  "username": "张三3",
+                  "article": 2
+               },
+               {
+                  "id": 5,
+                  "username": "张三4",
+                  "article": 5
+               },
+               {
+                  "id": 6,
+                  "username": "张三5",
+                  "article": 3
+               },
+               {
+                  "id": 7,
+                  "username": "张三6",
+                  "article": 4
+               },
+               {
+                  "id": 8,
+                  "username": "张三7",
+                  "article": 3
+               }
+            ]
+         },
+         {
+            "id": 17,
+            "organization": "数据组",
+            "num": 30,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "张三",
+                  "article": 9
+               },
+               {
+                  "id": 2,
+                  "username": "张三1",
+                  "article": 5
+               },
+               {
+                  "id": 3,
+                  "username": "张三2",
+                  "article": 9
+               },
+               {
+                  "id": 4,
+                  "username": "张三3",
+                  "article": 2
+               },
+               {
+                  "id": 5,
+                  "username": "张三4",
+                  "article": 5
+               }
+            ]
+         },
+         {
+            "id": 18,
+            "organization": "集成组",
+            "num": 23,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "张三",
+                  "article": 15
+               },
+               {
+                  "id": 2,
+                  "username": "张三1",
+                  "article": 3
+               },
+               {
+                  "id": 3,
+                  "username": "张三2",
+                  "article": 5
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "name": "基础架构运维部",
+      "data": [
+         {
+            "id": 9,
+            "organization": "架构组",
+            "num": 18,
+            "articleNum": [
+               {
+                  "id": 3,
+                  "username": "张三2",
+                  "article": 9
+               },
+               {
+                  "id": 4,
+                  "username": "张三3",
+                  "article": 5
+               },
+               {
+                  "id": 5,
+                  "username": "张三4",
+                  "article": 4
+               }
+            ]
+         },
+         {
+            "id": 10,
+            "organization": "管理组",
+            "num": 20,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "张三",
+                  "article": 9
+               },
+               {
+                  "id": 4,
+                  "username": "张三3",
+                  "article": 6
+               },
+               {
+                  "id": 5,
+                  "username": "张三4",
+                  "article": 5
+               }
+            ]
+         },
+         {
+            "id": 11,
+            "organization": "运维组",
+            "num": 30,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "张三",
+                  "article": 9
+               },
+               {
+                  "id": 2,
+                  "username": "张三1",
+                  "article": 5
+               },
+               {
+                  "id": 3,
+                  "username": "张三2",
+                  "article": 9
+               },
+               {
+                  "id": 4,
+                  "username": "张三3",
+                  "article": 2
+               },
+               {
+                  "id": 5,
+                  "username": "张三4",
+                  "article": 5
+               }
+            ]
+         },
+         {
+            "id": 12,
+            "organization": "运维u组",
+            "num": 23,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "张三",
+                  "article": 6
+               },
+               {
+                  "id": 2,
+                  "username": "张三1",
+                  "article": 5
+               },
+               {
+                  "id": 3,
+                  "username": "张三2",
+                  "article": 5
+               },
+               {
+                  "id": 4,
+                  "username": "张三3",
+                  "article": 2
+               },
+               {
+                  "id": 5,
+                  "username": "张三4",
+                  "article": 5
+               }
+            ]
+         },
+         {
+            "id": 13,
+            "organization": "运维7组",
+            "num": 9,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "张三",
+                  "article": 3
+               },
+               {
+                  "id": 2,
+                  "username": "张三1",
+                  "article": 6
+               }
+            ]
+         }
+      ]
+   },
+   {
+      "name": "信息安全部",
+      "data": [
+         {
+            "id": 7,
+            "organization": "信息安全管理组",
+            "num": 15,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "张三",
+                  "article": 7
+               },
+               {
+                  "id": 2,
+                  "username": "张三1",
+                  "article": 8
+               }
+            ]
+         },
+         {
+            "id": 8,
+            "organization": "流程安全支持组",
+            "num": 30,
+            "articleNum": [
+               {
+                  "id": 1,
+                  "username": "张三",
+                  "article": 9
+               },
+               {
+                  "id": 2,
+                  "username": "张三1",
+                  "article": 5
+               },
+               {
+                  "id": 3,
+                  "username": "张三2",
+                  "article": 9
+               },
+               {
+                  "id": 4,
+                  "username": "张三3",
+                  "article": 2
+               },
+               {
+                  "id": 5,
+                  "username": "张三4",
+                  "article": 5
+               }
+            ]
+         }
+      ]
+   }
+]

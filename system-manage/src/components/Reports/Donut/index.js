@@ -35,6 +35,14 @@ class Donut extends Component {
         }
 
     }
+    total=arr=>{
+        let sum=0;
+        arr.forEach(item=>{
+            sum+=item.num;
+
+        })
+        return sum;
+    }
 
     render() {
         const {
@@ -59,6 +67,7 @@ class Donut extends Component {
                 }
             }
         }
+        const total=this.total(data);
 
         return (
             <div >
@@ -82,7 +91,7 @@ class Donut extends Component {
                     <Guide>
                         <Html
                             position={["50%", "50%"]}
-                            html="<div style=&quot;color:#8c8c8c;font-size:1.16em;text-align: center;width: 10em;&quot;>文章总数<br><span style=&quot;color:#262626;font-size:2.5em&quot;>400</span>篇</div>"
+                            html={() => (`<div style="color:#8c8c8c;font-size:1.16em;text-align: center;width: 10em;">文章总数<br><span style="color:#262626;font-size:2.5em">${total}</span>篇</div>`)}
                             alignX="middle"
                             alignY="middle"
                         />
@@ -94,7 +103,7 @@ class Donut extends Component {
                         tooltip={[
                             "organization*percent",
                             (organization, percent) => {
-                                percent = percent * 100 + "%";
+                                percent = Math.round(percent*10000)/100+'%';
                                 return {
                                     name: organization,
                                     value: percent
